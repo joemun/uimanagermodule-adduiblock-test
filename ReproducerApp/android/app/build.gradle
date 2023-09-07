@@ -1,5 +1,6 @@
 apply plugin: "com.android.application"
 apply plugin: "com.facebook.react"
+apply plugin: 'kotlin-android'
 
 /**
  * This is the configuration block to customize your React Native Android app.
@@ -104,6 +105,9 @@ android {
 }
 
 dependencies {
+    implementation "androidx.core:core-ktx:$VERSION_CODE_KTX"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$VERSION_CODE_KOTLIN"
+    
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
 
